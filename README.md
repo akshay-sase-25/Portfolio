@@ -11,7 +11,7 @@ A modern, high-performance, and responsive personal portfolio website built for 
 ## 🌟 Key Features
 
 * **Sleek Cyber Dark Theme**: Deep obsidian OLED canvas (`#07050d`) complemented by glowing neon violet (`#7c3aed`) and electric cyber cyan (`#00f0ff`) accents.
-* **Interactive Custom Cursor**: Dual-element magnetic trailing cursor with smooth acceleration and contextual hover growth on interactive elements.
+* **Clean Native Navigation**: Simple, standard browser cursor with responsive pointer states across buttons, links, and cards.
 * **Cyber Marquee Ticker**: Continuous animated ticker highlighting primary technical competencies.
 * **Dynamic Stats Counter**: IntersectionObserver-powered animated counters that trigger on viewport entry.
 * **Interactive Java IDE Showcase**: Mac-style code editor displaying a Spring Boot REST API controller with full syntax coloring.
@@ -46,7 +46,7 @@ Portfolio/
 │   ├── bootstrap.min.css     # Base grid utilities
 │   └── style.css             # Main stylesheet (Cyber Dark theme, layout & animations)
 ├── js/
-│   └── main.js               # Application logic (cursor, menu, tabs, counters, form)
+│   └── main.js               # Application logic (menu, tabs, scroll reveals, counters, form)
 ├── img/                      # Profile photography & project screenshots
 ├── Akshay_sase_Resume.pdf     # Downloadable resume
 ├── index.html                # Semantic HTML5 single-page application

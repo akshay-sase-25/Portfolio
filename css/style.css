@@ -45,39 +45,12 @@ body {
   background: var(--bg-deep);
   color: var(--text);
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
 
-/* CURSOR */
-#cur {
-  width: 10px; height: 10px;
-  background: var(--cyan);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: width .2s, height .2s, background .2s;
-  box-shadow: 0 0 14px var(--cyan);
-}
-#cur-ring {
-  width: 38px; height: 38px;
-  border: 1.5px solid rgba(168, 85, 247, 0.7);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: all .15s ease;
-  box-shadow: 0 0 16px rgba(124, 58, 237, 0.35);
-}
-.cur-big #cur {
-  width: 18px; height: 18px;
-  background: var(--cyan);
-  box-shadow: 0 0 22px var(--cyan);
-}
-.cur-big #cur-ring {
-  width: 54px; height: 54px;
-  border-color: var(--cyan);
-  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+/* INTERACTIVE CURSORS */
+a, button, .btn-solid, .btn-out, .sub-btn, .tab, .stb, .menu-btn, .proj-link, .tag {
+  cursor: pointer;
 }
 
 /* SUBTLE CYBER NOISE & GRID */
@@ -943,6 +916,4 @@ footer {
 @media(max-width:560px){
   .panel.on{grid-template-columns:1fr;}
   .stats-bar-inner{grid-template-columns:1fr 1fr;}
-  body{cursor:auto;}
-  #cur,#cur-ring{display:none;}
 }
