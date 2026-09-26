@@ -17,7 +17,7 @@ A modern, high-performance, and responsive personal portfolio website built for 
 * **Interactive Java IDE Showcase**: Mac-style code editor displaying a Spring Boot REST API controller with full syntax coloring.
 * **Tabbed Skills Matrix**: Instant category switching between Frontend, Backend/Java, and DevOps & Tooling.
 * **Featured Projects**: High-impact cards with tech stack badges, repository links, and live previews.
-* **Experience & Education Timeline**: Glowing vertical timeline highlighting career path and academic credentials.
+* **CI/CD Career Pipeline**: High-tech DevOps execution pipeline visualization tracking the professional journey across Build, Staging Integration, and Production Runtime stages with animated data pulses.
 * **Interactive Contact Section**: High-tech form with custom cyber inputs and responsive status feedback.
 * **100% Responsive**: Tailored fluid layouts optimized for UltraWide, Desktop, Tablet, and Mobile screens.
 
