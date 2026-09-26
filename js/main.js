@@ -1,17 +1,3 @@
-// Single Dot Cursor (No Outer Circle)
-const cur = document.getElementById('cur');
-if (cur) {
-  window.addEventListener('mousemove', e => {
-    cur.style.left = e.clientX + 'px';
-    cur.style.top = e.clientY + 'px';
-  });
-
-  document.querySelectorAll('a, button, .btn-solid, .btn-out, .sub-btn, .tab, .stb, .menu-btn, .proj-link, .tag, .skill-card, .edu-card, .cert-card, .proj-card, .java-pill').forEach(el => {
-    el.addEventListener('mouseenter', () => document.body.classList.add('cur-hover'));
-    el.addEventListener('mouseleave', () => document.body.classList.remove('cur-hover'));
-  });
-}
-
 // Navigation & Scroll to Top
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
