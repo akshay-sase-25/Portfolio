@@ -45,12 +45,33 @@ body {
   background: var(--bg-deep);
   color: var(--text);
   overflow-x: hidden;
-  cursor: default;
+  cursor: none;
 }
 
-/* INTERACTIVE CURSORS */
+/* SIMPLE DOT CURSOR (NO CIRCLE) */
+#cur {
+  width: 9px;
+  height: 9px;
+  background: var(--cyan);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width .18s ease, height .18s ease, background .18s ease, box-shadow .18s ease;
+  box-shadow: 0 0 10px var(--cyan), 0 0 18px rgba(0, 240, 255, 0.5);
+}
+.cur-hover #cur {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  box-shadow: 0 0 14px #00f0ff, 0 0 25px #a855f7;
+}
+
 a, button, .btn-solid, .btn-out, .sub-btn, .tab, .stb, .menu-btn, .proj-link, .tag {
-  cursor: pointer;
+  cursor: none;
 }
 
 /* SUBTLE CYBER NOISE & GRID */
@@ -912,6 +933,12 @@ footer {
   .footer-top{grid-template-columns:1fr;}
   footer{padding:60px 30px 30px;}
   .footer-btm{flex-direction:column;gap:12px;text-align:center;}
+}
+@media(max-width:768px){
+  body, a, button, .btn-solid, .btn-out, .sub-btn, .tab, .stb, .menu-btn, .proj-link, .tag {
+    cursor: auto!important;
+  }
+  #cur { display: none!important; }
 }
 @media(max-width:560px){
   .panel.on{grid-template-columns:1fr;}
