@@ -545,65 +545,217 @@
 <section id="certifications">
   <div class="container">
     <div class="reveal">
-      <p class="sec-label">Credentials</p>
+      <p class="sec-label">Credentials & Qualifications</p>
       <h2 class="sec-title">Professional <em class="it">Certifications</em></h2>
-      <p class="sec-sub">Continuous investment in learning and professional development.</p>
+      <p class="sec-sub">Continuous investment in learning, industry qualifications, and specialized competencies.</p>
     </div>
+
+    <!-- FILTER & SUMMARY BAR -->
+    <div class="cert-filter-wrap reveal">
+      <div class="cert-filters">
+        <button type="button" class="cert-filter-btn active" data-filter="all">All Credentials (6)</button>
+        <button type="button" class="cert-filter-btn" data-filter="java-backend">Java & Backend</button>
+        <button type="button" class="cert-filter-btn" data-filter="frontend-fullstack">Frontend & Full Stack</button>
+        <button type="button" class="cert-filter-btn" data-filter="data-database">Database & Data</button>
+      </div>
+      <div class="cert-summary-pill">
+        <i class="fas fa-certificate"></i> 6 Verified Qualifications
+      </div>
+    </div>
+
     <div class="cert-grid">
-      <div class="cert-card reveal d1">
-        <div class="cert-img"><img src="img/IMG_20250115_104445.jpg" alt="Full Stack"></div>
-        <div class="cert-body">
-          <h5>Full Stack Development</h5>
-          <p class="cert-meta">Coursera · January 2024</p>
-          <p>Advanced training in React, Node.js, and modern web application architecture.</p>
-          <span class="cert-badge">Web Dev</span>
+      <!-- 01: Full Stack -->
+      <div class="cert-card reveal d1" data-category="frontend-fullstack">
+        <div class="cert-header">
+          <div class="cert-icon-box fullstack">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">Coursera</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
         </div>
-      </div>
-      <div class="cert-card reveal d2">
-        <div class="cert-img"><img src="img/IMG_20250115_104346.jpg" alt="React"></div>
-        <div class="cert-body">
-          <h5>React Frontend Mastery</h5>
-          <p class="cert-meta">Udemy · July 2023</p>
-          <p>Deep dive into React hooks, context API, and modern component patterns.</p>
-          <span class="cert-badge">Frontend</span>
+        <div class="cert-card-body">
+          <h5 class="cert-title">Full Stack Development</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> January 2024</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Specialization</span>
+          </div>
+          <p class="cert-desc">Advanced training in React, Node.js, and modern full-stack web application architecture and API design.</p>
+          <div class="cert-skills">
+            <span class="c-skill">React.js</span>
+            <span class="c-skill">Node.js</span>
+            <span class="c-skill">REST APIs</span>
+            <span class="c-skill">Web Architecture</span>
+          </div>
         </div>
-      </div>
-      <div class="cert-card reveal d3">
-        <div class="cert-img"><img src="img/IMG_20250115_104346.jpg" alt="Java"></div>
-        <div class="cert-body">
-          <h5>Java Programming</h5>
-          <p class="cert-meta">Great Learning · March 2023</p>
-          <p>Object-oriented programming and software design principles in Java.</p>
-          <span class="cert-badge">Backend</span>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: CRS-FS-8491</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
+        <div class="cert-watermark"><i class="fas fa-award"></i></div>
       </div>
-      <div class="cert-card reveal d1">
-        <div class="cert-img"><img src="img/IMG_20250115_104445.jpg" alt="Spring Boot"></div>
-        <div class="cert-body">
-          <h5>Spring Boot Essentials</h5>
-          <p class="cert-meta">Udemy · August 2023</p>
-          <p>REST APIs, Spring Data JPA, Spring Security, and Microservices fundamentals.</p>
-          <span class="cert-badge">Java</span>
+
+      <!-- 02: Spring Boot -->
+      <div class="cert-card reveal d2" data-category="java-backend">
+        <div class="cert-header">
+          <div class="cert-icon-box spring">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">Udemy</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
         </div>
-      </div>
-      <div class="cert-card reveal d2">
-        <div class="cert-img"><img src="img/IMG_20250115_104445.jpg" alt="Database"></div>
-        <div class="cert-body">
-          <h5>Database Management</h5>
-          <p class="cert-meta">NPTEL · December 2022</p>
-          <p>Advanced SQL, normalization, and relational database design.</p>
-          <span class="cert-badge">Database</span>
+        <div class="cert-card-body">
+          <h5 class="cert-title">Spring Boot Essentials</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> August 2023</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Backend Mastery</span>
+          </div>
+          <p class="cert-desc">Production REST APIs, Spring Data JPA, Spring Security, JWT authentication, and Microservices architecture.</p>
+          <div class="cert-skills">
+            <span class="c-skill">Spring Boot</span>
+            <span class="c-skill">Spring Security</span>
+            <span class="c-skill">JPA / Hibernate</span>
+            <span class="c-skill">Microservices</span>
+          </div>
         </div>
-      </div>
-      <div class="cert-card reveal d3">
-        <div class="cert-img"><img src="img/IMG_20250115_104346.jpg" alt="Python"></div>
-        <div class="cert-body">
-          <h5>Python Data Science</h5>
-          <p class="cert-meta">IBM · May 2023</p>
-          <p>Data analysis and visualization with Python, Pandas, and NumPy.</p>
-          <span class="cert-badge">Data</span>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: UDM-SB-7714</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
+        <div class="cert-watermark"><i class="fas fa-shield-alt"></i></div>
       </div>
+
+      <!-- 03: Java Programming -->
+      <div class="cert-card reveal d3" data-category="java-backend">
+        <div class="cert-header">
+          <div class="cert-icon-box java">
+            <i class="fab fa-java"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">Great Learning</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+        <div class="cert-card-body">
+          <h5 class="cert-title">Java Programming</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> March 2023</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Core Engineering</span>
+          </div>
+          <p class="cert-desc">Object-oriented programming, design patterns, collections framework, and multithreading in enterprise Java.</p>
+          <div class="cert-skills">
+            <span class="c-skill">Java SE</span>
+            <span class="c-skill">OOP</span>
+            <span class="c-skill">Multithreading</span>
+            <span class="c-skill">Design Patterns</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: GL-JAVA-3029</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="cert-watermark"><i class="fas fa-certificate"></i></div>
+      </div>
+
+      <!-- 04: React Frontend -->
+      <div class="cert-card reveal d1" data-category="frontend-fullstack">
+        <div class="cert-header">
+          <div class="cert-icon-box react">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">Udemy</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+        <div class="cert-card-body">
+          <h5 class="cert-title">React Frontend Mastery</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> July 2023</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Frontend Engineering</span>
+          </div>
+          <p class="cert-desc">Deep dive into modern React hooks, state management, context API, and modular component design patterns.</p>
+          <div class="cert-skills">
+            <span class="c-skill">React.js</span>
+            <span class="c-skill">Hooks</span>
+            <span class="c-skill">Context API</span>
+            <span class="c-skill">UI Patterns</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: UDM-RCT-9182</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="cert-watermark"><i class="fas fa-code"></i></div>
+      </div>
+
+      <!-- 05: Database Management -->
+      <div class="cert-card reveal d2" data-category="data-database">
+        <div class="cert-header">
+          <div class="cert-icon-box database">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">NPTEL</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+        <div class="cert-card-body">
+          <h5 class="cert-title">Database Management</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> December 2022</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Data Engineering</span>
+          </div>
+          <p class="cert-desc">Advanced SQL querying, normalization (1NF-BCNF), ACID properties, and relational database schema optimization.</p>
+          <div class="cert-skills">
+            <span class="c-skill">SQL</span>
+            <span class="c-skill">MySQL</span>
+            <span class="c-skill">Normalization</span>
+            <span class="c-skill">Query Tuning</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: NPT-DBMS-4091</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="cert-watermark"><i class="fas fa-server"></i></div>
+      </div>
+
+      <!-- 06: Python Data Science -->
+      <div class="cert-card reveal d3" data-category="data-database">
+        <div class="cert-header">
+          <div class="cert-icon-box python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="cert-badges-right">
+            <span class="cert-issuer-badge">IBM</span>
+            <span class="cert-verify-chip"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+        <div class="cert-card-body">
+          <h5 class="cert-title">Python Data Science</h5>
+          <div class="cert-meta-bar">
+            <span class="cert-date"><i class="far fa-calendar-alt"></i> May 2023</span>
+            <span class="cert-type"><i class="fas fa-award"></i> Data Analytics</span>
+          </div>
+          <p class="cert-desc">Data analysis, statistical computing, manipulation, and predictive visualization with Python, Pandas, and NumPy.</p>
+          <div class="cert-skills">
+            <span class="c-skill">Python</span>
+            <span class="c-skill">Pandas</span>
+            <span class="c-skill">NumPy</span>
+            <span class="c-skill">Data Analytics</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-id"><i class="fas fa-fingerprint"></i> ID: IBM-PDS-5120</span>
+          <a href="#contact" class="cert-link-btn">Verify Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="cert-watermark"><i class="fas fa-chart-line"></i></div>
+      </div>
+
     </div>
   </div>
 </section>

@@ -93,3 +93,26 @@ function handleForm(e) {
   }
 }
 window.handleForm = handleForm;
+
+// Certification Filter Functionality
+document.querySelectorAll('.cert-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cert-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.cert-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'flex';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(15px)';
+        setTimeout(() => {
+          card.style.transition = 'all 0.4s cubic-bezier(.16, 1, .3, 1)';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 30);
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
